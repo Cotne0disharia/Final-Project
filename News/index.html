@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/News/style.css">
-    <link rel="icon" href="Images/croppedlogo.png" type="image/icon type">
-    <title>სიაახლეები</title>
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav id="top-links">
+        <div class="nav__logo">
+            <a href="#"><img src="Images/logo.png" alt="logo"></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="/main.html">Home</a></li>
+            <li class="link"><a href="/News/index.html">News</a></li>
+            <li class="link"><a href="/Services/index.html">Services</a></li>
+            <li class="link"><a href="/AboutUs/index.html">About Us</a></li>
+            <li class="link"><a href="/Contact/index.html">Contact</a></li>
+        </ul>
+        <a href="/Login/index.html"><button class="btn">Join Now</button></a>
+    </nav>
+
+    <main class="main">
+        <section class="news">
+            <div class="container">
+                <article class="news__item">
+                    <img src="Images/fitness-trainer-woman.png" alt="News Image">
+                    <h2 class="news__title">Breaking News Title</h2>
+                    <p class="news__excerpt">A short excerpt or summary of the news article.</p>
+                    <a href="#" class="news__link">Read More</a>
+                </article>
+
+                <article class="news__item">
+                    <img src="Images/fitness-trainer-man.png" alt="News Image">
+                    <h2 class="news__title">Another Breaking News Title</h2>
+                    <p class="news__excerpt">A short excerpt or summary of another news article.</p>
+                    <a href="#" class="news__link">Read More</a>
+                </article>
+
+                <!-- More articles can be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 News Website. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
