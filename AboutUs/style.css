@@ -1,0 +1,450 @@
+:root {
+    --primary-color: #111317;
+    --primary-color-light: #1f2125;
+    --primary-color-extra-light: #35373b;
+    --secondary-color: #f9ac54;
+    --secondary-color-dark: #d79447;
+    --text-light: #d1d5db;
+    --white: #ffffff;
+    --max-width: 1200px;
+    }
+    
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: 'roboto';
+    }
+    
+    .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+    }
+    
+    .section__header {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+    }
+    
+    .section__subheader {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--text-light);
+    }
+    
+    .btn {
+    padding: 16px 32px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+    
+    .btn:hover {
+    background-color: var(--secondary-color-dark);
+    }
+    
+    img {
+    width: 100%;
+    display: flex;
+    }
+    
+    a {
+    text-decoration: none;
+    }
+    
+    .bg__blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px var(--secondary-color);
+    z-index: -1;
+    }
+    
+    body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+    }
+    
+    nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    }
+    
+    .nav__logo {
+    max-width: 150px;
+    }
+    
+    .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    }
+    
+    .link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--white);
+    }
+    
+    .link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+    }
+    
+    .link a:hover::after {
+    width: 50%;
+    }
+    
+    .header__container {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    }
+    
+    .header__container::before {
+    content: "FITNESS";
+    position: absolute;
+    bottom: 5rem;
+    right: 20rem;
+    font-size: 10rem;
+    font-weight: 700;
+    line-height: 7rem;
+    color: var(--white);
+    opacity: 0.05;
+    z-index: -1;
+    }
+    
+    .header__blur {
+    bottom: 5rem;
+    right: 0;
+    }
+    
+    .header__content h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    }
+    
+    .header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: var(--white);
+    }
+    
+    .header__content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--white);
+    }
+    
+    .header__content p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    }
+    
+    .header__image {
+    position: relative;
+    }
+    
+    .header__image::before {
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--secondary-color);
+    opacity: 0.1;
+    z-index: -1;
+    }
+    
+    .header__image img {
+    max-width: 350px;
+    margin: auto;
+    }
+    
+    .explore__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    }
+    
+    .explore__nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    }
+    
+    .explore__nav span {
+    padding: 0 6px;
+    font-size: 1.5rem;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+    
+    .explore__nav span:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    }
+    
+    .explore__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    }
+    
+    .explore__card {
+    padding: 1rem;
+    background-color: var(--primary-color-light);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+    }
+    
+    .explore__card:hover {
+    background-color: var(--primary-color-extra-light);
+    border-color: var(--secondary-color);
+    }
+    
+    .explore__card span {
+    display: inline-block;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: var(--white);
+    background-color: var(--secondary-color-dark);
+    border-radius: 5px;
+    }
+    
+    .explore__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    }
+    
+    .explore__card p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    }
+    
+    .explore__card a {
+    color: var(--white);
+    transition: 0.3s;
+    }
+    
+    .explore__card a:hover {
+    color: var(--secondary-color);
+    }
+
+.nav__logo img {
+    height: 40px;
+}
+
+.nav__links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__links .link {
+    margin-right: 20px;
+}
+
+.nav__links .link a {
+    text-decoration: none;
+}
+
+.nav__links .link a.active,
+.nav__links .link a:hover {
+    color: var(--secondary-color);
+}
+
+.aboutus__container {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section__header {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+}
+
+.aboutus__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aboutus_header {
+    color: var(--secondary-color)
+}
+
+.aboutus__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* Team section styles */
+.team__container {
+    padding: 80px 0;
+    background-color: var(--primary-color-extra-light);
+}
+
+.team__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team__member {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.team__member:hover {
+    transform: translateY(-5px);
+}
+
+.team__member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team__member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.team__member p {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.footer__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+    }
+    
+    .footer__blur {
+    bottom: 0;
+    right: 0;
+    }
+    
+    .footer__logo {
+    max-width: 150px;
+    margin-bottom: 2rem;
+    }
+    
+    .footer__col p {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    }
+    
+    .footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+    
+    .footer__socials a {
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 100%;
+    transition: 0.3s;
+    }
+    
+    .footer__socials a:hover {
+    color: var(--white);
+    background-color: var(--secondary-color);
+    }
+    
+    .footer__col h4 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--white);
+    }
+    
+    .footer__col > a {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    transition: 0.3s;
+    }
+    
+    .footer__col > a:hover {
+    color: var(--secondary-color);
+    }
+    
+    .footer__bar {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--white);
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav__links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav__links .link {
+        margin-right: 10px;
+    }
+
+    .team__grid {
+        grid-template-columns: 1fr;
+    }
+}

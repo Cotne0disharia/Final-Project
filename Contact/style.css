@@ -146,7 +146,6 @@ nav {
 .contact__form input[type="text"],
 .contact__form input[type="email"],
 .contact__form textarea {
-    width: 100%;
     padding: 12px;
     background-color: var(--primary-color-extra-light);
     border: 1px solid var(--primary-color-light);
@@ -166,4 +165,131 @@ nav {
 
 .contact__form button[type="submit"]:hover {
     background-color: var(--secondary-color-dark);
+}
+
+@media (max-width: 480px) {
+    .section__header {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .contact__form,
+    .contact__info {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    .contact__container {
+        gap: 0;
+    }
+
+    .contact__form {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact__form,
+    .contact__info {
+        padding: 2rem;
+    }
+
+    .contact__form input[type="text"],
+    .contact__form input[type="email"],
+    .contact__form textarea {
+        padding: 8px;
+    }
+
+    a > .btn {
+        position: relative;
+        left: 620px;
+        bottom: 60px;
+        height: 50px;
+        width: 120px;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .section__header {
+        font-size: 1.5rem;
+    }
+
+    .contact__form,
+    .contact__info {
+        padding: 1.5rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    .contact__container {
+        gap: 2rem;
+    }
+
+    .contact__form,
+    .contact__info {
+        padding: 2rem;
+    }
+
+    .contact__form input[type="text"],
+    .contact__form input[type="email"],
+    .contact__form textarea {
+        padding: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .section__header {
+        font-size: 1.5rem;
+    }
+
+    .contact__form,
+    .contact__info {
+        padding: 1.5rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
 }

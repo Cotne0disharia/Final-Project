@@ -3,11 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/AboutUs/style.css">
-    <link rel="icon" href="Images/croppedlogo.png" type="image/icon type">
     <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0
+    ,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="icon" href="Images/croppedlogo.png" type="image/icon type">
 </head>
 <body>
-    
+    <nav id="top-links">
+        <div class="nav__logo">
+            <a href="#"><img src="Images/logo.png" alt="logo"></a>
+        </div>
+        <ul class="nav__links">
+            <li class="link"><a href="../main.html">Home</a></li>
+            <li class="link"><a href="../News/index.html">News</a></li>
+            <li class="link"><a href="../Services/index.html">Services</a></li>
+            <li class="link"><a href="../AboutUs/index.html">About Us</a></li>
+            <li class="link"><a href="../Contact/index.html">Contact</a></li>
+        </ul>
+        <a href="/Login/index.html"><button class="btn">Join Now</button></a>
+    </nav>
+
+    <section class="aboutus__container">
+        <div class="container">
+            <h2 class="section__header">About Us</h2>
+            <div class="aboutus__content">
+                <h1 class="aboutus_header">Welcome To FitClub!</h1>
+                <p class="aboutus__text">
+                    At FitClub, our mission is to empower individuals to lead healthier, happier lives through fitness and wellness.
+                </p>
+                <p class="aboutus__text">
+                    Whether you're just starting your fitness journey or looking to take your workouts to the next level, FitClub is here to support you every step of the way.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team__container">
+        <div class="container">
+            <h2 class="section__header">Our Team</h2>
+            <div class="team__grid">
+                <div class="team__member">
+                    <img src="Images/shaun-stafford-personal-trainer.png" alt="Team Member 1">
+                    <h3>John Doe</h3>
+                    <p>Co-Founder</p>
+                </div>
+                <div class="team__member">
+                    <img src="Images/image.png" alt="Team Member 2">
+                    <h3>Jane Smith</h3>
+                    <p>Marketing Director</p>
+                </div>
+                <div class="team__member">
+                    <img src="Images/image123.png" alt="Team Member 3">
+                    <h3>David Johnson</h3>
+                    <p>Lead Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section__container footer__container">
+        <span class="bg__blur"></span>
+        <span class="bg__blur footer__blur"></span>
+        <div class="footer__col">
+          <div class="footer__logo"><img src="Images/logo.png" alt="logo" /></div>
+          <p>
+            Take the first step towards a healthier, stronger you with our
+            unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+          </p>
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <a href="#">Business</a>
+          <a href="#">Franchise</a>
+          <a href="#">Partnership</a>
+          <a href="#">Network</a>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <a href="#">Blogs</a>
+          <a href="#">Security</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">BMI Calculator</a>
+        </div>
+      </footer>
 </body>
 </html>
